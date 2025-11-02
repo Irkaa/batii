@@ -1,0 +1,146 @@
+/* --- BASE --- */
+.main {
+  background: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+/* --- HERO --- */
+.hero {
+  position: relative;
+  height: 55vh;
+  background: linear-gradient(rgba(30, 75, 133, 0.7), rgba(30, 75, 133, 0.7)),
+    url("/about-hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  text-align: center;
+  padding: 3rem;
+  color: var(--color-light-yellow);
+}
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --- STORY --- */
+.story {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  align-items: center;
+  background: var(--color-light-blue);
+  padding: 4rem 2rem;
+}
+.storyImage img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+.storyText {
+  color: var(--color-heading);
+}
+.storyText h2 {
+  color: var(--color-background);
+  margin-bottom: 1rem;
+}
+
+/* --- FEATURES --- */
+.features {
+  text-align: center;
+  background: var(--color-light-yellow);
+  color: var(--color-heading);
+  padding: 4rem 2rem;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+.card:hover {
+  background: var(--color-light-blue);
+}
+
+/* --- GALLERY --- */
+.gallery {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  color: var(--color-heading);
+}
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.galleryGrid img {
+  width: 100%;
+  border-radius: 1rem;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.galleryGrid img:hover {
+  transform: scale(1.05);
+}
+
+/* --- TESTIMONIALS --- */
+.testimonials {
+  text-align: center;
+  background: var(--color-pink);
+  padding: 4rem 2rem;
+  color: var(--color-heading);
+}
+.testimonialGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.testimonialCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+.testimonialCard span {
+  font-size: 0.9rem;
+  color: var(--color-background);
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* --- VISIT --- */
+.visit {
+  text-align: center;
+  background: var(--color-light-blue);
+  color: var(--color-heading);
+  padding: 4rem 2rem;
+}
+.mapPlaceholder {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-background);
+  font-weight: 500;
+}
