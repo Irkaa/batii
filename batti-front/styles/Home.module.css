@@ -1,0 +1,134 @@
+.main {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff; /* white background for entire page */
+  color: #1E4B85; /* dark blue text by default */
+  padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  background-color: #ffffff; /* white section */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.heroText h1 {
+  font-size: 2.5rem;
+  color: #1E4B85; /* dark blue */
+  margin-bottom: 1rem;
+}
+
+.heroText p {
+  font-size: 1.2rem;
+  color: #333; /* dark gray for paragraph */
+  margin-bottom: 1.5rem;
+}
+
+.shopBtn {
+  padding: 10px 20px;
+  background-color: #F5E24D; /* golden button */
+  color: #1E4B85;            /* dark blue text */
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.shopBtn:hover {
+  background-color: #d4c300; /* darker gold on hover */
+}
+
+/* Categories Section */
+.categories {
+  margin-top: 4rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #1E4B85;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.categoryCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5E24D; /* golden category card */
+  color: #1E4B85;
+  font-weight: 600;
+  padding: 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.categoryCard:hover {
+  background-color: #e6c500; /* slightly darker gold on hover */
+  color: #ffffff; /* text turns white on hover */
+}
+
+/* Featured Products Carousel */
+.featured {
+  margin-top: 4rem;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.featured h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1E4B85;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background-color: #F5E24D; /* golden scrollbar thumb */
+  border-radius: 4px;
+}
+
+.card {
+  flex: 0 0 auto;
+  background-color: #ffffff;
+  color: #1E4B85;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  min-width: 200px;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
