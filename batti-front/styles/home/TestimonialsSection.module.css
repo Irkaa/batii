@@ -1,0 +1,34 @@
+.testimonials {
+  background: var(--color-pink);
+  color: var(--color-heading);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.testimonialGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonialCard {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonialCard span {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  color: var(--color-background);
+}

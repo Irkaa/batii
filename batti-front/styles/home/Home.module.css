@@ -1,0 +1,53 @@
+/* Home.module.css — controls overall layout of the home page */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* no gaps — background colors now meet seamlessly */
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Each section now spans full width */
+.section {
+  width: 100vw; /* fills the entire viewport width */
+  margin: 0; /* no centering for the section wrapper */
+}
+
+/* Inner content container — centered and consistent width */
+.sectionContent {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* Alternating background colors for full-width sections */
+.section:nth-child(even) {
+  background: #ffffff;
+  color: var(--color-heading);
+}
+
+.section:nth-child(odd) {
+  background: var(--color-light-blue);
+  color: var(--color-heading);
+}
+
+/* Fade-in animation for smooth section entrance */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fadeIn {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sectionContent {
+    padding: 3rem 1.5rem;
+  }
+}

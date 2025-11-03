@@ -1,0 +1,35 @@
+.offers {
+  text-align: center;
+  background: var(--color-light-yellow);
+  color: var(--color-heading);
+  padding: 4rem 2rem;
+}
+
+.offers h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.offerBanner {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offerBtn {
+  display: inline-block;
+  background: var(--color-background);
+  color: var(--color-text);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+.offerBtn:hover {
+  background: var(--color-heading);
+}

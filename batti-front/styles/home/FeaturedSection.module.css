@@ -1,0 +1,48 @@
+.featured {
+  background: #fff;
+  color: var(--color-heading);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  width: 180px;
+  background: var(--color-light-yellow);
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+.card p {
+  color: var(--color-background);
+  font-weight: 500;
+}

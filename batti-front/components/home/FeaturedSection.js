@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/home/FeaturedSection.module.css';
 
 export default function FeaturedSection() {
     const featuredProducts = [
@@ -10,7 +10,8 @@ export default function FeaturedSection() {
     { id: 5, name: 'Chihmel Togloom', image: '/products/chihmel.jpg' },
   ];
 
-    <section className={styles.featured}>
+    return (
+      <section className={styles.featured}>
         <h2>Featured Products</h2>
         <div className={styles.carousel}>
           {featuredProducts.map(product => (
@@ -26,4 +27,5 @@ export default function FeaturedSection() {
           ))}
         </div>
       </section>
+    )
 }
